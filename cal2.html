@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <link
+            href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+            rel="stylesheet" id="bootstrap-css">
+        <title>Document</title>
+        <style>
+            body{
+                background-image: url("https://res.cloudinary.com/dymfsdc1w/image/upload/v1705071129/wanderlust_DEV/w1_1_rftrkb.jpg");
+                background-size: cover;
+    background-repeat: no-repeat;
+            }
+        .container{
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            margin-top: 2rem;
+            padding: 10px;
+            
+        }
+        .col{
+            
+            width: 100%;
+            display: flex;
+            padding: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box{
+            
+            width: 40%;
+            height: 100%;
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+            background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13.5px );
+-webkit-backdrop-filter: blur( 13.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+            
+        }
+        .input{
+            border-radius: 0.5rem;
+            height: 3rem;
+            background-color: white;
+            margin: 1rem 0;
+        }
+        .label{
+            margin-top: 1rem;
+            font-size: large;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col">
+                <img src="https://res.cloudinary.com/dymfsdc1w/image/upload/v1705072400/wanderlust_DEV/l2_twwsql-removebg-preview_vuhtto.png" alt="">
+                <div class="box">
+
+
+                    <label for="nameInput" class="label" style="color: black;"><b>Enter your name:</b></label>
+                    <input type="text" id="nameInput" class="input">
+                    <label for="dateInput" class="label" style="color: black;">Select a date:</label>
+                    <input type="date" id="dateInput" class="input" >
+                    <div>
+                    <button type="button" id="submitBtn" class="btn btn-success">Submit</button>
+                   
+                    <button type="button"  id="resetBtn" class="btn btn-danger">Reset</button>
+                </div>
+                  
+
+
+                    <div id="output" style="display: none;">
+                        <p id="expressionNumber">Expression Number: </p>
+                        <p id="soulNumber"><strong>Soul Number: </strong></p>
+                        <p id="personalityNumber"><strong>Personality Number: </strong></p>
+                        <p id="whatdate"></p>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="script1.js"></script>
+        <script
+        
+            src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    </body>
+</html>
